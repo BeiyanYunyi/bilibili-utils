@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bilibili-utils/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/bilibili-utils/static/js/main.b11547b2.chunk.js",
-    "main.js.map": "/bilibili-utils/static/js/main.b11547b2.chunk.js.map",
+    "main.js": "/bilibili-utils/static/js/main.cb2f9313.chunk.js",
+    "main.js.map": "/bilibili-utils/static/js/main.cb2f9313.chunk.js.map",
     "runtime-main.js": "/bilibili-utils/static/js/runtime-main.9e5c3862.js",
     "runtime-main.js.map": "/bilibili-utils/static/js/runtime-main.9e5c3862.js.map",
     "static/js/2.6f591cfd.chunk.js": "/bilibili-utils/static/js/2.6f591cfd.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.9e5c3862.js",
     "static/js/2.6f591cfd.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.b11547b2.chunk.js"
+    "static/js/main.cb2f9313.chunk.js"
   ]
 }
