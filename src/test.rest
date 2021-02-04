@@ -1,0 +1,2 @@
+GET http://localhost:8080/api.bilibili.cn/author_recommend?aid=${bv2av(bv)}
+Origin: localhost
