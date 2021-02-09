@@ -41,7 +41,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://lixiang810.github.io/bilibili-utils",
+  "homepage": "https://bu.penclub.club/",
   "browserslist": {
     "production": [
       ">0.2%",

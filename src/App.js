@@ -57,13 +57,13 @@ const ListTitles = ({ prop }) => {
     return "";
   }
   return (
-    <Container>
+    <Container style={{ "maxWidth": "100%" }}>
       <Typography variant="text" style={{ color: "#8A8A8A" }}>
         推荐视频列表
       </Typography>
       <Grid container spacing={2}>
         {prop.map((n) => {
-          const corscover = `http://192.168.50.92:8080/${n.cover}`;
+          const corscover = `https://bund.penclub.club/?${n.cover}`;
           const bvnum = av2bv(n.aid);
           return (
             <VideoElement
@@ -72,17 +72,10 @@ const ListTitles = ({ prop }) => {
               src={corscover}
               title={n.title}
               className={classes.videoelement}
+              click={n.click}
+              review={n.review}
+              videoreview={n.video_review}
             />
-
-            /*<GridList
-              cellHeight={classes.gridList.height}
-              className={classes.gridList}
-            >
-              <GridListTile key={n.aid}>
-                <img src={corscover} alt={n.title} />
-                <GridListTileBar title={n.title} subtitle={avnum} />
-              </GridListTile>
-            </GridList>*/
           );
         })}
       </Grid>
@@ -102,7 +95,7 @@ const App = () => {
   const handleGetButtonClick = (event) => {
     event.preventDefault();
     const av = bv2av(livebvNumber);
-    const urltoget = `http://192.168.50.92:8080/http://api.bilibili.cn/author_recommend?aid=${av}`;
+    const urltoget = `https://bund.penclub.club/?http://api.bilibili.cn/author_recommend?aid=${av}`;
     axios
       .get(urltoget)
       .then((res) => {
@@ -149,9 +142,7 @@ const App = () => {
             获取
           </Button>
         </Grid>
-        <Grid item>
           <ListTitles prop={ppp} />
-        </Grid>
       </Grid>
     </ThemeProvider>
   );
